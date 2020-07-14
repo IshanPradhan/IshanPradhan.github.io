@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.form-styling {
+  background: linear-gradient(45deg, DeepSkyBlue, Orchid);
+}
+
+.input-styling {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+input {
+  background-color: transparent;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  width: 300px;
+  max-width: 700px;
+  height: auto;
+  border: transparent;
+  border-bottom: 1px solid black;
+}
+
+::placeholder {
+  color: wheat;
+  font-family: "Trebuchet MS";
+}
+
+.form-styling button {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #04343f;
+  color: white;
+  height: 50px;
+  width: 120px;
+}
