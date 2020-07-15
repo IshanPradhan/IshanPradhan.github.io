@@ -25,11 +25,24 @@ class ProjectComponent extends Component {
       <div>
         <div>
           <u>
-            <p style={{ fontSize: "25px", paddingLeft: "20px" }}>
+            <p
+              style={{
+                fontSize: "25px",
+                paddingLeft: "20px",
+                marginTop: "370px",
+                marginBottom: "50px",
+              }}
+            >
               Recent Projects Undertaken
             </p>
           </u>
-          <p style={{ fontSize: "20px", paddingLeft: "20px" }}>
+          <p
+            style={{
+              fontSize: "20px",
+              paddingLeft: "20px",
+              marginBottom: "50px",
+            }}
+          >
             A collection of my Recent and interesting projects
           </p>
         </div>

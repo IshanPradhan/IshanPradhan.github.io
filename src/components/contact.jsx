@@ -3,11 +3,33 @@ import SocialIcons from "./social";
 
 class ContactForm extends Component {
   state = {
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     message: "",
   };
+
+  onNameChange(event) {
+    this.setState({
+      name: event.target.value,
+    });
+  }
+
+  onEmailChange(event) {
+    this.setState({
+      email: event.target.value,
+    });
+  }
+
+  onMessageChange(event) {
+    this.setState({
+      message: event.target.value,
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state);
+  }
 
   render() {
     return (
@@ -37,18 +59,20 @@ class ContactForm extends Component {
             </p>
           </div>
           <center>
-            <div className="input-styling">
-              <input type="text" placeholder="Full Name" />
-              <br />
-              <input type="email" placeholder="Email" />
-              <br />
-              <input type="text" placeholder="Message" />
-              <br />
-              <button>Hit me up!</button>
-            </div>
-            <div className="social-icons">
-              <SocialIcons />
-            </div>
+            <form className="contact-form">
+              <div className="input-styling">
+                <input type="text" placeholder="Full Name" />
+                <br />
+                <input type="email" placeholder="Email" />
+                <br />
+                <input type="text" placeholder="Message" />
+                <br />
+                <button>Hit me up!</button>
+              </div>
+              <div className="social-icons">
+                <SocialIcons />
+              </div>
+            </form>
           </center>
         </div>
       </div>
