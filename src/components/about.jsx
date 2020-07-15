@@ -17,9 +17,7 @@ class About extends Component {
 
     const imageStyling = {
       borderRadius: "50%",
-      margin: "20px 0px 20px 20px",
-      float: "left",
-      display: "inline",
+      margin: "20px 0px 0px 0px",
     };
 
     const ReactTypingEffectDemoLine1 = () => {
@@ -59,13 +57,14 @@ class About extends Component {
             </center>
           </div>
         </div>
-        <img
-          src="https://storage.cloud.google.com/picture/Photo.jpg"
-          height="100px"
-          widht="100px"
-          style={imageStyling}
-        />
-        <br />
+        <center>
+          <img
+            src="https://storage.cloud.google.com/picture/Photo.jpg"
+            height="100px"
+            widht="100px"
+            style={imageStyling}
+          />
+        </center>
         <p style={fontStyling}>{this.state.description}</p>
       </div>
     );
