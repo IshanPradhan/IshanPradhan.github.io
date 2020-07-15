@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SocialIcons from "./social";
 
 class ContactForm extends Component {
   state = {
@@ -36,7 +37,6 @@ class ContactForm extends Component {
             </p>
           </div>
           <center>
-            <div></div>
             <div className="input-styling">
               <input type="text" placeholder="Full Name" />
               <br />
@@ -45,6 +45,9 @@ class ContactForm extends Component {
               <input type="text" placeholder="Message" />
               <br />
               <button>Hit me up!</button>
+            </div>
+            <div className="social-icons">
+              <SocialIcons />
             </div>
           </center>
         </div>

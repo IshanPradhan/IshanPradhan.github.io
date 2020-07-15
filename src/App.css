@@ -71,3 +71,33 @@ input {
   height: 50px;
   width: 120px;
 }
+
+.social-icons {
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 200ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: rgb(170, 54, 102);
+}
+
+a.linkedin {
+  color: rgb(71, 150, 187);
+}
