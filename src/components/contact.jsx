@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SocialIcons from "./social";
+import axios from "axios";
 
 class ContactForm extends Component {
   state = {
@@ -26,9 +27,28 @@ class ContactForm extends Component {
     });
   }
 
+  resetForm() {
+    this.setState({
+      name: "",
+      email: "",
+      message: "",
+    });
+  }
+
   handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state);
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/send",
+      data: "this.state",
+    }).then((response) => {
+      if (response.data.status === "sucess") {
+        alert("Thanks for Contacting Me! :)");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message Failed to send");
+      }
+    });
   }
 
   render() {
@@ -59,7 +79,11 @@ class ContactForm extends Component {
             </p>
           </div>
           <center>
-            <form className="contact-form">
+            <form
+              className="contact-form"
+              onSubmit={this.handleSubmit.bind(this)}
+              action="POST"
+            >
               <div className="input-styling">
                 <input type="text" placeholder="Full Name" />
                 <br />
@@ -67,7 +91,7 @@ class ContactForm extends Component {
                 <br />
                 <input type="text" placeholder="Message" />
                 <br />
-                <button>Hit me up!</button>
+                <button type="submit">Hit me up!</button>
               </div>
               <div className="social-icons">
                 <SocialIcons />
