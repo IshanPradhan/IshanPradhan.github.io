@@ -9,7 +9,7 @@ class ProjectComponent extends Component {
       height: "250px",
       float: "left",
       marginLeft: "20px",
-      marginBottom: "30px",
+      marginBottom: "20px",
     };
 
     const headingStyler = {
@@ -29,7 +29,7 @@ class ProjectComponent extends Component {
               style={{
                 fontSize: "25px",
                 paddingLeft: "20px",
-                marginTop: "370px",
+                marginTop: "350px",
                 marginBottom: "50px",
               }}
             >
@@ -46,7 +46,7 @@ class ProjectComponent extends Component {
             A collection of my Recent and interesting projects
           </p>
         </div>
-        <div style={{ marginLeft: "20px" }}>
+        <div style={{ marginLeft: "20px", marginBottom: "600px" }}>
           <Card style={cardStyling}>
             <Card.Header style={headingStyler}>Should I translate?</Card.Header>
             <Card.Body>
@@ -106,7 +106,7 @@ class ProjectComponent extends Component {
               </Card.Text>
               <Button
                 variant="primary"
-                href="https://github.com/IshanPradhan/Website-Blocker"
+                href="https://github.com/IshanPradhan/DIctionary"
                 target="_blank"
               >
                 Project Link
@@ -134,14 +134,13 @@ class ProjectComponent extends Component {
               <Card.Text>Fully functional to-do list using DOM</Card.Text>
               <Button
                 variant="primary"
-                href="https://github.com/IshanPradhan/Website-Blocker"
+                href="https://github.com/IshanPradhan/to-do-list"
                 target="_blank"
               >
                 Project Link
               </Button>
             </Card.Body>
           </Card>
-          <br />
         </div>
       </div>
     );

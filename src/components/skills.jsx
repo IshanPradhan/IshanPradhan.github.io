@@ -22,10 +22,6 @@ class SkillComponent extends Component {
     ],
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const progressBarStyles = {
       marginTop: "20px",
@@ -35,6 +31,7 @@ class SkillComponent extends Component {
       marginLeft: "20px",
       left: "0%",
       float: "left",
+      display: "fixed",
     };
     const textStyle = {
       fontSize: "20px",

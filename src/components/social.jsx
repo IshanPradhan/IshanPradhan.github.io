@@ -12,7 +12,7 @@ class SocialIcons extends Component {
   render() {
     return (
       <div>
-        <h5>You can also connect with me here!</h5>
+        <h5>You can connect with me here!</h5>
         <a
           href="https://www.facebook.com/ishan.pradhan.77/"
           className="facebook social"

@@ -10,11 +10,21 @@ class IndexPage extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <About />
-        <SkillComponent />
-        <ProjectComponent />
-        <ContactForm />
+        <div>
+          <Header />
+        </div>
+        <div>
+          <About />
+        </div>
+        <div>
+          <SkillComponent />
+        </div>
+        <div>
+          <ProjectComponent />
+        </div>
+        <div>
+          <ContactForm />
+        </div>
       </div>
     );
   }

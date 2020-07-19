@@ -9,48 +9,6 @@ class ContactForm extends Component {
     message: "",
   };
 
-  onNameChange(event) {
-    this.setState({
-      name: event.target.value,
-    });
-  }
-
-  onEmailChange(event) {
-    this.setState({
-      email: event.target.value,
-    });
-  }
-
-  onMessageChange(event) {
-    this.setState({
-      message: event.target.value,
-    });
-  }
-
-  resetForm() {
-    this.setState({
-      name: "",
-      email: "",
-      message: "",
-    });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/send",
-      data: "this.state",
-    }).then((response) => {
-      if (response.data.status === "sucess") {
-        alert("Thanks for Contacting Me! :)");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message Failed to send");
-      }
-    });
-  }
-
   render() {
     return (
       <div>
@@ -59,7 +17,7 @@ class ContactForm extends Component {
             <u>
               <p
                 style={{
-                  marginTop: "550px",
+                  marginTop: "20px",
                   paddingLeft: "20px",
                   fontSize: "20px",
                 }}
@@ -79,24 +37,9 @@ class ContactForm extends Component {
             </p>
           </div>
           <center>
-            <form
-              className="contact-form"
-              onSubmit={this.handleSubmit.bind(this)}
-              action="POST"
-            >
-              <div className="input-styling">
-                <input type="text" placeholder="Full Name" />
-                <br />
-                <input type="email" placeholder="Email" />
-                <br />
-                <input type="text" placeholder="Message" />
-                <br />
-                <button type="submit">Hit me up!</button>
-              </div>
-              <div className="social-icons">
-                <SocialIcons />
-              </div>
-            </form>
+            <div className="social-icons">
+              <SocialIcons />
+            </div>
           </center>
         </div>
       </div>
