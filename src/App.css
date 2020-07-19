@@ -1,3 +1,21 @@
+@media only screen and (max-device-width: 480px) {
+  .projectClass {
+    padding-top: 200px;
+  }
+
+  .cardsClass {
+    padding-bottom: 350px;
+  }
+
+  .form-styling {
+    padding-top: 30px;
+  }
+
+  .card {
+    width: auto;
+  }
+}
+
 .form-styling {
   background: linear-gradient(45deg, DeepSkyBlue, Orchid);
 }
@@ -52,8 +70,8 @@ a.facebook {
   color: #4968ad;
 }
 
-a.twitter {
-  color: #49a1eb;
+a.github {
+  color: #010407;
 }
 
 a.instagram {
@@ -61,5 +79,5 @@ a.instagram {
 }
 
 a.linkedin {
-  color: rgb(71, 150, 187);
+  color: rgb(16, 141, 199);
 }

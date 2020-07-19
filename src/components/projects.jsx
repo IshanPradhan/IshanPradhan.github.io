@@ -32,6 +32,7 @@ class ProjectComponent extends Component {
                 marginTop: "350px",
                 marginBottom: "50px",
               }}
+              className="projectClass"
             >
               Recent Projects Undertaken
             </p>
@@ -46,8 +47,11 @@ class ProjectComponent extends Component {
             A collection of my Recent and interesting projects
           </p>
         </div>
-        <div style={{ marginLeft: "20px", marginBottom: "600px" }}>
-          <Card style={cardStyling}>
+        <div
+          style={{ marginLeft: "20px", marginBottom: "600px" }}
+          className="cardsClass"
+        >
+          <Card style={cardStyling} border="dark" className="card">
             <Card.Header style={headingStyler}>Should I translate?</Card.Header>
             <Card.Body>
               <Card.Title>Indian Language translator</Card.Title>
@@ -63,7 +67,7 @@ class ProjectComponent extends Component {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={cardStyling}>
+          <Card style={cardStyling} border="dark">
             <Card.Header style={headingStyler}>Poetic or what?</Card.Header>
             <Card.Body>
               <Card.Title>Poetry Generator</Card.Title>
@@ -79,7 +83,7 @@ class ProjectComponent extends Component {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={cardStyling}>
+          <Card style={cardStyling} border="dark">
             <Card.Header style={headingStyler}>
               You are not allowed here!
             </Card.Header>
@@ -97,7 +101,7 @@ class ProjectComponent extends Component {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={cardStyling}>
+          <Card style={cardStyling} border="dark">
             <Card.Header style={headingStyler}>What's this?</Card.Header>
             <Card.Body>
               <Card.Title>English Language Dictionary</Card.Title>
@@ -113,7 +117,7 @@ class ProjectComponent extends Component {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={cardStyling}>
+          <Card style={cardStyling} border="dark">
             <Card.Header style={headingStyler}>Show me some movie!</Card.Header>
             <Card.Body>
               <Card.Title>Movie Library</Card.Title>
@@ -127,7 +131,7 @@ class ProjectComponent extends Component {
               </Button>
             </Card.Body>
           </Card>
-          <Card style={cardStyling}>
+          <Card style={cardStyling} border="dark">
             <Card.Header style={headingStyler}>What Next?</Card.Header>
             <Card.Body>
               <Card.Title>to-do List</Card.Title>
