@@ -59,7 +59,7 @@ class About extends Component {
         </div>
         <center>
           <img
-            src="https://drive.google.com/file/d/1ZPWmr2WiAQpjDSQN-UgcCe6WDmI_FaeE/view"
+            src="https://media.istockphoto.com/vectors/man-hipster-avatar-cartoon-guy-with-black-hair-and-red-glasses-vector-id1143957175?k=6&m=1143957175&s=170667a&w=0&h=J0u91vdkqRWUExcUjvYmNoBBuV8di-KMQdtGW-o5CPQ="
             height="100px"
             widht="100px"
             style={imageStyling}
