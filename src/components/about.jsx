@@ -59,7 +59,7 @@ class About extends Component {
         </div>
         <center>
           <img
-            src="https://storage.cloud.google.com/picture/Photo.jpg"
+            src="https://drive.google.com/file/d/1ZPWmr2WiAQpjDSQN-UgcCe6WDmI_FaeE/view"
             height="100px"
             widht="100px"
             style={imageStyling}

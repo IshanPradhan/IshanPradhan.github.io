@@ -3,16 +3,18 @@
     padding-top: 200px;
   }
 
-  .cardsClass {
-    padding-bottom: 350px;
-  }
-
   .form-styling {
     padding-top: 30px;
+    width: 500px;
   }
 
   .card {
-    width: auto;
+    height: 400px;
+  }
+
+  .project-card-component {
+    height: 300px;
+    width: 900px;
   }
 }
 
