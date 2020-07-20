@@ -165,6 +165,7 @@ class ProjectComponent extends Component {
             </Card>
           </div>
         </div>
+        <br />
       </div>
     );
   }
