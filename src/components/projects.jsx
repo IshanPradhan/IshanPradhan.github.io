@@ -116,7 +116,8 @@ class ProjectComponent extends Component {
               <Card.Body>
                 <Card.Title>English Language Dictionary</Card.Title>
                 <Card.Text>
-                  Blocking desired websites at specific time intervals
+                  Finding meaning of any specific word and also implementing
+                  spell checker
                 </Card.Text>
                 <Button
                   variant="primary"
