@@ -116,8 +116,7 @@ class ProjectComponent extends Component {
               <Card.Body>
                 <Card.Title>English Language Dictionary</Card.Title>
                 <Card.Text>
-                  Finding meaning of any specific word and also implementing
-                  spell checker
+                  Finding meaning of any specific word and also tried spell checking
                 </Card.Text>
                 <Button
                   variant="primary"
