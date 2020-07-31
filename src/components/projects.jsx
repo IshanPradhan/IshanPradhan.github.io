@@ -22,14 +22,14 @@ class ProjectComponent extends Component {
     };
 
     return (
-      <div>
+      <div className="cardHolder">
         <div>
           <u>
             <p
               style={{
                 fontSize: "25px",
                 paddingLeft: "20px",
-                marginTop: "350px",
+                paddingTop: "550px",
                 marginBottom: "50px",
               }}
               className="projectClass"
@@ -165,8 +165,9 @@ class ProjectComponent extends Component {
             </Card>
           </div>
         </div>
-        <br />
+        <br/>
       </div>
+      
     );
   }
 }

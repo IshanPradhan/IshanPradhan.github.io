@@ -25,7 +25,7 @@ class SkillComponent extends Component {
   render() {
     const progressBarStyles = {
       marginTop: "20px",
-      width: "30%",
+      width: "40%",
       height: "20px",
       marginBottom: "20px",
       marginLeft: "20px",

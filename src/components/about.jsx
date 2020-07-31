@@ -61,6 +61,7 @@ class About extends Component {
             height="100px"
             widht="100px"
             style={imageStyling}
+            alt="Profile Photo"
           />
         </center>
         <p style={fontStyling}>{this.state.description}</p>
