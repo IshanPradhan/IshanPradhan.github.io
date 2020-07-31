@@ -30,11 +30,9 @@ class About extends Component {
       return (
         <ReactTypingEffect
           text={[
-            "git init",
             "git add .",
             'git commit -m "Fancy Commit"',
-            "git add origin <URL>",
-            "git push origin master",
+            "git push",
           ]}
           eraseDelay="400"
           typingDelay="100"

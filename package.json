@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "react-social-icons": "^4.1.0"
+    "@babel/parser": "^7.10.5",
+    "react-social-icons": "^4.1.0"  
   }
 }
