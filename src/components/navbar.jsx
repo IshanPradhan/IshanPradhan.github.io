@@ -8,16 +8,16 @@ class Header extends React.Component {
       <div>
         <Navbar bg="dark" variant="dark" sticky="top">
           <Nav className="mr-auto">
-            <Nav.Link href="#about" style={{ color: "white" }}>
+            <Nav.Link href="#aboutId" style={{ color: "white" }}>
               About Me
             </Nav.Link>
-            <Nav.Link href="#skills" style={{ color: "white" }}>
+            <Nav.Link href="#skillsId" style={{ color: "white" }}>
               Skills
             </Nav.Link>
-            <Nav.Link href="#projects" style={{ color: "white" }}>
+            <Nav.Link href="#projectId" style={{ color: "white" }}>
               Projects
             </Nav.Link>
-            <Nav.Link href="#contact" style={{ color: "white" }}>
+            <Nav.Link href="#contactId" style={{ color: "white" }}>
               Contact Me
             </Nav.Link>
           </Nav>

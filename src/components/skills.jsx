@@ -8,17 +8,17 @@ class SkillComponent extends Component {
       { type: "C++", level: 60 },
       { type: "HTML5", level: 80 },
       { type: "CSS3", level: 70 },
-      { type: "BootStrap4", level: 70 },
-      { type: "React.JS", level: 70 },
-      { type: "Machine Learning", level: 75 },
-      { type: "Deep Learning", level: 70 },
-      { type: "Natural Language Processing", level: 60 },
-      { type: "Computer Vision", level: 60 },
-      { type: "Image Processing", level: 65 },
-      { type: "Reinforcement Learning", level: 70 },
+      { type: "BootStrap4", level: 72 },
+      { type: "React.JS", level: 75 },
+      { type: "Machine Learning", level: 78 },
+      { type: "Deep Learning", level: 69 },
+      { type: "Natural Language Processing", level: 63 },
+      { type: "Computer Vision", level: 61 },
+      { type: "Image Processing", level: 66 },
+      { type: "Reinforcement Learning", level: 55 },
       { type: "C", level: 65 },
       { type: "Blockchain", level: 50 },
-      { type: "git", level: 70 },
+      { type: "git", level: 73 },
     ],
   };
 
@@ -40,7 +40,7 @@ class SkillComponent extends Component {
     };
 
     return (
-      <div>
+      <div id="skillsId">
         <div>
           <u>
             <p
@@ -59,6 +59,7 @@ class SkillComponent extends Component {
               now={skill.level}
               label={skill.type}
               style={progressBarStyles}
+              key={skill.level}
             />
           ))}
         </div>

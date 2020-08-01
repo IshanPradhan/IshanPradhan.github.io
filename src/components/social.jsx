@@ -17,6 +17,7 @@ class SocialIcons extends Component {
           href="https://www.facebook.com/ishan.pradhan.77/"
           className="facebook social"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
@@ -24,6 +25,7 @@ class SocialIcons extends Component {
           href="https://www.instagram.com/__ishanpradhan__/"
           className="instagram social"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
@@ -31,6 +33,7 @@ class SocialIcons extends Component {
           href="https://www.linkedin.com/in/ishan-pradhan-8862ab167/"
           className="linkedin social"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
         </a>
@@ -38,6 +41,7 @@ class SocialIcons extends Component {
           href="https://github.com/IshanPradhan"
           className="github social"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>

@@ -10,6 +10,7 @@ class ProjectComponent extends Component {
       float: "left",
       marginLeft: "20px",
       marginBottom: "20px",
+      display: "inline-block",
     };
 
     const headingStyler = {
@@ -22,7 +23,7 @@ class ProjectComponent extends Component {
     };
 
     return (
-      <div className="cardHolder">
+      <div className="cardHolder" id="projectId">
         <div>
           <u>
             <p
@@ -120,7 +121,7 @@ class ProjectComponent extends Component {
                 </Card.Text>
                 <Button
                   variant="primary"
-                  href="https://github.com/IshanPradhan/DIctionary"
+                  href="https://github.com/IshanPradhan/Dictionary"
                   target="_blank"
                 >
                   Project Link

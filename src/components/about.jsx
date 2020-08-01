@@ -42,7 +42,7 @@ class About extends Component {
     };
 
     return (
-      <div>
+      <div id="aboutId">
         <div>
           <div style={{ marginTop: 20, fontSize: 20 }}>
             <center>
@@ -61,7 +61,7 @@ class About extends Component {
             height="100px"
             widht="100px"
             style={imageStyling}
-            alt="Profile Photo"
+            alt="Profile img"
           />
         </center>
         <p style={fontStyling}>{this.state.description}</p>

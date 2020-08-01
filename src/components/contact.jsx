@@ -2,15 +2,9 @@ import React, { Component } from "react";
 import SocialIcons from "./social";
 
 class ContactForm extends Component {
-  state = {
-    name: "",
-    email: "",
-    message: "",
-  };
-
   render() {
     return (
-      <div>
+      <div id="contactId"> 
         <div className="form-styling">
           <div>
             <u>

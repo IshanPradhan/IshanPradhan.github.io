@@ -1,22 +1,28 @@
 @media only screen and (max-device-width: 480px) {
-  .projectClass {
-    padding-top: 200px;
-  }
 
+  .projectClass {
+    padding-top: 0px;
+  }
 
   .project-card-component {
     height: 300px;
-    width: 900px;
+    width: 300%;
+    display: inline-block;
   }
 
   .cardHolder{
-    margin-bottom: 0px;
+    margin-bottom: 0%;
+    display: inline-block;
   }
 
   html, body {
     max-width: 100%;
     overflow-x: hidden;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .form-styling {
