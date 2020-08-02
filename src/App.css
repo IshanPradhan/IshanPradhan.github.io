@@ -7,17 +7,22 @@
   .project-card-component {
     height: 300px;
     width: 300%;
-    display: inline-block;
   }
 
   .cardHolder{
     margin-bottom: 0%;
-    display: inline-block;
   }
 
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 992px) {
+
+  #contactId {
+    margin-top: 35em;
   }
 }
 
@@ -27,7 +32,6 @@ html {
 
 .form-styling {
   background: linear-gradient(45deg, DeepSkyBlue, Orchid);
-  margin-top: 50px;
   width: 100%;
 }
 

@@ -23,7 +23,7 @@ class ProjectComponent extends Component {
     };
 
     return (
-      <div className="cardHolder" id="projectId">
+      <div className="cardHolder" id="projectId" style={{ height: "auto"}}>
         <div>
           <u>
             <p
@@ -49,7 +49,7 @@ class ProjectComponent extends Component {
           </p>
         </div>
         <div
-          style={{ marginLeft: "20px", marginBottom: "550px" }}
+          style={{ marginLeft: "20px" }}
           className="cardsClass"
         >
           <div className="project-card-component">
@@ -166,7 +166,7 @@ class ProjectComponent extends Component {
             </Card>
           </div>
         </div>
-        <br/>
+        <br />
       </div>
       
     );
