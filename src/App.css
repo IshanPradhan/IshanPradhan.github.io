@@ -35,16 +35,6 @@ html {
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-=======
-/*
-.about, .skills, .bar, .card-body, .project-card-component {
-  background-color: #010407;
-  color: aliceblue;
-}
-*/
-
->>>>>>> da0e90320503f51d22a286eba3a957da3938cf82
 .form-styling {
   background: linear-gradient(45deg, DeepSkyBlue, Orchid);
   width: 100%;
