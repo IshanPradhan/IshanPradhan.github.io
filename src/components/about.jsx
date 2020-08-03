@@ -12,7 +12,7 @@ class About extends Component {
       textAlign: "justify",
       fontFamily: "Trebuchet MS",
       fontSize: 20,
-      marginTop: "120px",
+      marginTop: "80px",
     };
 
     const imageStyling = {
@@ -30,11 +30,9 @@ class About extends Component {
       return (
         <ReactTypingEffect
           text={[
-            "git init",
             "git add .",
             'git commit -m "Fancy Commit"',
-            "git add origin <URL>",
-            "git push origin master",
+            "git push",
           ]}
           eraseDelay="400"
           typingDelay="100"
@@ -44,9 +42,9 @@ class About extends Component {
     };
 
     return (
-      <div>
+      <div id="aboutId" className="about">
         <div>
-          <div style={{ marginTop: 20, fontSize: 20 }}>
+          <div style={{ paddingTop: 20, fontSize: 20 }}>
             <center>
               <ReactTypingEffectDemoLine1 />
             </center>
@@ -63,6 +61,7 @@ class About extends Component {
             height="100px"
             widht="100px"
             style={imageStyling}
+            alt="Profile img"
           />
         </center>
         <p style={fontStyling}>{this.state.description}</p>

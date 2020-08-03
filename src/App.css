@@ -1,47 +1,43 @@
 @media only screen and (max-device-width: 480px) {
+
   .projectClass {
-    padding-top: 200px;
-  }
-
-  .form-styling {
-    padding-top: 50px;
-    width: 500px;
-  }
-
-  .card {
-    height: 400px;
+    padding-top: 0px;
   }
 
   .project-card-component {
     height: 300px;
-    width: 900px;
+    width: 300%;
   }
+
+  .cardHolder{
+    margin-bottom: 0%;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 992px) {
+
+  #contactId {
+    margin-top: 35em;
+  }
+}
+
+.dark, .card-body,.project-card-component {
+  background-color: #010407;
+  color: aliceblue;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .form-styling {
   background: linear-gradient(45deg, DeepSkyBlue, Orchid);
-}
-
-.input-styling {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-input {
-  background-color: transparent;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
-  width: 300px;
-  max-width: 700px;
-  height: auto;
-  border: transparent;
-  border-bottom: 1px solid black;
-  outline: none;
-}
-
-::placeholder {
-  color: wheat;
-  font-family: "Trebuchet MS";
+  width: 100%;
 }
 
 .form-styling button {

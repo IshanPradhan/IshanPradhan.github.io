@@ -1,29 +1,24 @@
 import React, { Component } from "react";
 import SocialIcons from "./social";
-import axios from "axios";
 
 class ContactForm extends Component {
-  state = {
-    name: "",
-    email: "",
-    message: "",
-  };
-
   render() {
     return (
-      <div>
+      <div id="contactId"> 
         <div className="form-styling">
           <div>
             <u>
-              <p
-                style={{
-                  marginTop: "20px",
+              <div style={{
+                  paddingTop: "30px",
                   paddingLeft: "20px",
                   fontSize: "20px",
-                }}
-              >
+                }}>
+                  <br />
+              <p>
                 Contact Form
               </p>
+              </div>
+              
             </u>
             <p
               style={{
