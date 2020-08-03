@@ -1,10 +1,12 @@
 {
+  "homepage": "https://IshanPradhan.github.io/portfolio-website",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.29",
-    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -23,6 +25,8 @@
     "react-wordcloud": "^1.2.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +48,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/parser": "^7.10.5",
+    "gh-pages": "^3.1.0",
     "react-social-icons": "^4.1.0"
   }
 }
