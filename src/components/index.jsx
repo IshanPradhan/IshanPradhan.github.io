@@ -13,17 +13,19 @@ class IndexPage extends Component {
         <div>
           <Header />
         </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <SkillComponent />
-        </div>
-        <div>
-          <ProjectComponent />
-        </div>
-        <div>
+        <div className="dark">
+          <div>
+            <About />
+          </div>
+          <div>
+            <SkillComponent />
+          </div>
+          <div>
+            <ProjectComponent />
+          </div>
+          <div>
           <ContactForm />
+        </div>
         </div>
       </div>
     );

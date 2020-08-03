@@ -26,9 +26,21 @@
   }
 }
 
+.dark, .card-body,.project-card-component {
+  background-color: #010407;
+  color: aliceblue;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
+/*
+.about, .skills, .bar, .card-body, .project-card-component {
+  background-color: #010407;
+  color: aliceblue;
+}
+*/
 
 .form-styling {
   background: linear-gradient(45deg, DeepSkyBlue, Orchid);

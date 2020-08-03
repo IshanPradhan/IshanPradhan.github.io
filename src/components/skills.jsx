@@ -40,14 +40,14 @@ class SkillComponent extends Component {
     };
 
     return (
-      <div id="skillsId">
+      <div id="skillsId" className="skills">
         <div>
           <u>
             <p
               style={{
                 fontSize: "25px",
                 paddingLeft: "20px",
-                marginBottom: "40px",
+                paddingBottom: "40px",
               }}
             >
               Skills:

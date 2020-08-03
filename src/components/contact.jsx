@@ -25,6 +25,7 @@ class ContactForm extends Component {
                 paddingLeft: "20px",
                 fontFamily: "Times New Roman",
                 fontSize: "20px",
+                textAlign: "justify",
               }}
             >
               If you got something interesting for me or open for discussion can

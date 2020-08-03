@@ -12,7 +12,7 @@ class About extends Component {
       textAlign: "justify",
       fontFamily: "Trebuchet MS",
       fontSize: 20,
-      marginTop: "120px",
+      marginTop: "80px",
     };
 
     const imageStyling = {
@@ -42,9 +42,9 @@ class About extends Component {
     };
 
     return (
-      <div id="aboutId">
+      <div id="aboutId" className="about">
         <div>
-          <div style={{ marginTop: 20, fontSize: 20 }}>
+          <div style={{ paddingTop: 20, fontSize: 20 }}>
             <center>
               <ReactTypingEffectDemoLine1 />
             </center>
