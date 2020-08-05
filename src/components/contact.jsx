@@ -15,7 +15,7 @@ class ContactForm extends Component {
                 }}>
                   <br />
               <p>
-                Contact Form
+                Wanna Connect?
               </p>
               </div>
               
@@ -31,6 +31,16 @@ class ContactForm extends Component {
               If you got something interesting for me or open for discussion can
               get in touch with me here!
             </p>
+          </div>
+          <div className="form">
+            <center>
+              <form>
+                <input type="text" placeholder="Name" /><br />
+                <input type="text" placeholder="Email" /><br />
+                <input type="text" placeholder="Message" /><br />
+                <button className="submitbuttom">Submit</button>
+              </form>
+            </center>
           </div>
           <center>
             <div className="social-icons">
