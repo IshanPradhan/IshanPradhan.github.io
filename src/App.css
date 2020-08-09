@@ -34,7 +34,7 @@
 .card-body,
 .project-card-component {
   background-color: #010407;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
 }
 
 html {
@@ -50,6 +50,7 @@ input {
   border: 0;
   outline: 0;
 }
+
 input:focus {
   outline: none !important;
 }

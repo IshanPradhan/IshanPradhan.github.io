@@ -1,14 +1,20 @@
 import React, { Component } from "react";
+import axios from "axios";
 import SocialIcons from "./social";
 
 class ContactForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", email: "", message: "" };
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+    };
 
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handleMessageChange = this.handleMessageChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleNameChange = (event) => {
@@ -21,6 +27,29 @@ class ContactForm extends Component {
 
   handleMessageChange = (event) => {
     this.setState({ message: event.target.value });
+  };
+
+  handleSubmit = (event) => {
+    var name = this.state.name;
+    var email = this.state.email;
+    var message = this.state.message;
+    axios({
+      method: "POST",
+      url: "http://localhost:3000/portfolio-website?",
+      data: {
+        name: name,
+        email: email,
+        message: message,
+      },
+    }).then((response) => {
+      if (response.data.message === "success") {
+        alert("Message Sent");
+        // this.resetForm()
+      } else if (response.data.message === "fail") {
+        alert("Message sending failed");
+      }
+    });
+    event.preventDefault();
   };
 
   render() {
@@ -77,7 +106,13 @@ class ContactForm extends Component {
                   onChange={this.handleMessageChange}
                 />
                 <br />
-                <button className="submitbuttom">Submit</button>
+                <button
+                  className="submitbuttom"
+                  onClick={this.handleSubmit}
+                  type="submit"
+                >
+                  Submit
+                </button>
               </form>
             </center>
           </div>
