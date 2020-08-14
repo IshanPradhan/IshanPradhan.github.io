@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import SocialIcons from "./social";
 
 class ContactForm extends Component {
