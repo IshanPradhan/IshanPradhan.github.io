@@ -33,22 +33,6 @@ class ContactForm extends Component {
     var name = this.state.name;
     var email = this.state.email;
     var message = this.state.message;
-    axios({
-      method: "POST",
-      url: "http://localhost:3000/portfolio-website?",
-      data: {
-        name: name,
-        email: email,
-        message: message,
-      },
-    }).then((response) => {
-      if (response.data.message === "success") {
-        alert("Message Sent");
-        // this.resetForm()
-      } else if (response.data.message === "fail") {
-        alert("Message sending failed");
-      }
-    });
     event.preventDefault();
   };
 
