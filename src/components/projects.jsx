@@ -48,10 +48,7 @@ class ProjectComponent extends Component {
             A collection of my Recent and interesting projects
           </p>
         </div>
-        <div
-          style={{ marginLeft: "20px" }}
-          className="cardsClass"
-        >
+        <div style={{ marginLeft: "20px" }} className="cardsClass">
           <div className="project-card-component">
             <Card style={cardStyling} border="dark">
               <Card.Header style={headingStyler}>
@@ -64,7 +61,7 @@ class ProjectComponent extends Component {
                 </Card.Text>
                 <Button
                   variant="dark"
-                  href="https://github.com/IshanPradhan/Poetry-Generation"
+                  href=" https://github.com/IshanPradhan/Indian-Language-Translator"
                   target="_blank"
                 >
                   Project Link
@@ -82,7 +79,7 @@ class ProjectComponent extends Component {
                 </Card.Text>
                 <Button
                   variant="dark"
-                  href="https://github.com/IshanPradhan/Indian-Language-Translator"
+                  href="https://github.com/IshanPradhan/Poetry-Generation"
                   target="_blank"
                 >
                   Project Link
@@ -117,7 +114,8 @@ class ProjectComponent extends Component {
               <Card.Body style={{ height: 193 }}>
                 <Card.Title>English Language Dictionary</Card.Title>
                 <Card.Text>
-                  Finding meaning of any specific word and also tried spell checking
+                  Finding meaning of any specific word and also tried spell
+                  checking
                 </Card.Text>
                 <Button
                   variant="dark"
@@ -168,7 +166,6 @@ class ProjectComponent extends Component {
         </div>
         <br />
       </div>
-      
     );
   }
 }

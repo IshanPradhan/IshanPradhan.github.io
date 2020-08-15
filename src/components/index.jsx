@@ -24,8 +24,8 @@ class IndexPage extends Component {
             <ProjectComponent />
           </div>
           <div>
-          <ContactForm />
-        </div>
+            <ContactForm />
+          </div>
         </div>
       </div>
     );
