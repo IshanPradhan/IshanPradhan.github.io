@@ -89,8 +89,8 @@ class ContactForm extends Component {
               }}
               className="contactText"
             >
-              If you got something interesting for me or open for discussion can
-              get in touch with me here!
+              If you got something interesting for me or open for discussion you
+              can get in touch with me here!
             </p>
           </div>
           <div className="form">
