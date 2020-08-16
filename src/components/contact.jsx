@@ -29,11 +29,39 @@ class ContactForm extends Component {
   };
 
   handleSubmit = (event) => {
-    var name = this.state.name;
-    var email = this.state.email;
-    var message = this.state.message;
     event.preventDefault();
+    const name = this.state.name;
+    const email = this.state.email;
+    const message = this.state.message;
+    const template_id = "portfolio_contact";
+    alert("Thanks for connecting \nWe will get in touch soon! ");
+
+    this.sendMail(template_id, {
+      message_html: message,
+      from_name: name,
+      reply_to: email,
+    });
+    this.setState({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
+
+  sendMail(templateId, variables) {
+    window.emailjs
+      .send("gmail", templateId, variables)
+      .then((res) => {
+        console.log("Email successfully sent!");
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch((err) =>
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        )
+      );
+  }
 
   render() {
     return (
