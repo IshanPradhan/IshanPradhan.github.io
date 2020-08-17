@@ -4,14 +4,17 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 toast.configure();
+const initalState = {
+  name: "",
+  email: "",
+  message: "",
+  emailError: "",
+};
+
 class ContactForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-    };
+    this.state = initalState;
 
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -31,14 +34,30 @@ class ContactForm extends Component {
     this.setState({ message: event.target.value });
   };
 
+  validate = () => {
+    let emailError = "";
+    if (!this.state.email.includes("@")) {
+      emailError = "invalid email id";
+    }
+    if (emailError) {
+      this.setState({ emailError });
+      return false;
+    }
+    return true;
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
+
     const name = this.state.name;
     const email = this.state.email;
     const message = this.state.message;
     const template_id = "portfolio_contact";
-
-    /*
+    const isValid = this.validate();
+    if (isValid) {
+      console.log(this.state);
+      this.setState(initalState);
+    }
 
     this.sendMail(template_id, {
       message_html: message,
@@ -46,22 +65,19 @@ class ContactForm extends Component {
       reply_to: email,
     });
 
-    */
-
     //send notification
-
     const notify = () => {
       toast("Thanks for Contacting", { autoClose: 5000 });
     };
     notify();
+
+    //clear input fields
     this.setState({
       name: "",
       email: "",
       message: "",
     });
   };
-
-  /*
 
   sendMail(templateId, variables) {
     window.emailjs
@@ -77,8 +93,6 @@ class ContactForm extends Component {
         )
       );
   }
-
-  */
 
   render() {
     return (
@@ -127,6 +141,9 @@ class ContactForm extends Component {
                   onChange={this.handleEmailChange}
                 />
                 <br />
+
+                <div style={{ color: "red" }}>{this.state.emailError}</div>
+
                 <input
                   type="text"
                   placeholder="Message"
