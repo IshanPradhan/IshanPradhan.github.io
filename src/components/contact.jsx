@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import SocialIcons from "./social";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+toast.configure();
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -34,19 +37,31 @@ class ContactForm extends Component {
     const email = this.state.email;
     const message = this.state.message;
     const template_id = "portfolio_contact";
-    alert("Thanks for connecting \nI will get in touch soon! ");
+
+    /*
 
     this.sendMail(template_id, {
       message_html: message,
       from_name: name,
       reply_to: email,
     });
+
+    */
+
+    //send notification
+
+    const notify = () => {
+      toast("Thanks for Contacting", { autoClose: 5000 });
+    };
+    notify();
     this.setState({
       name: "",
       email: "",
       message: "",
     });
   };
+
+  /*
 
   sendMail(templateId, variables) {
     window.emailjs
@@ -62,6 +77,8 @@ class ContactForm extends Component {
         )
       );
   }
+
+  */
 
   render() {
     return (
