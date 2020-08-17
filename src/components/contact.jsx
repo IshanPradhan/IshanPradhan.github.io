@@ -34,7 +34,7 @@ class ContactForm extends Component {
     const email = this.state.email;
     const message = this.state.message;
     const template_id = "portfolio_contact";
-    alert("Thanks for connecting \nWe will get in touch soon! ");
+    alert("Thanks for connecting \nI will get in touch soon! ");
 
     this.sendMail(template_id, {
       message_html: message,
