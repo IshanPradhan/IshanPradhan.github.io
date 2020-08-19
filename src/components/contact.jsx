@@ -86,12 +86,7 @@ class ContactForm extends Component {
         console.log("Email successfully sent!");
       })
       // Handle errors here however you like, or use a React error boundary
-      .catch((err) =>
-        console.error(
-          "Oh well, you failed. Here some thoughts on the error that occured:",
-          err
-        )
-      );
+      .catch((err) => console.error("Error message:", err));
   }
 
   render() {
