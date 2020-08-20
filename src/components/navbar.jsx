@@ -6,7 +6,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar bg="dark" variant="dark" sticky="top">
+        <Navbar bg="dark" variant="dark" fixed="top">
           <Nav className="mr-auto">
             <Nav.Link href="#aboutId" style={{ color: "white" }}>
               About Me
